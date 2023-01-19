@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(48, 48, 48);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #FFF;
+    font-size: 32px;
+    margin: 20px 0;
+}
+
+.busca {
+    display: flex;
+    width: 400px;
+}
+.busca #searchInput {
+    flex: 1;
+    padding: 10px;
+    outline: none;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 0;
+    transition: all ease-out 200ms;
+}
+.busca #searchInput:focus {
+    box-shadow: 0px 0px 7px rgb(29, 113, 192);
+}
+.busca button {
+    padding: 10px;
+    font-size: 15px;
+    border: 0;
+    background-color: #555;
+    color: #FFF;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: all ease-in 150ms;
+}
+.busca button:hover {
+    background-color: #FFF;
+    color: #555;
+}
+
+.resultado {
+    width: 400px;
+    display: none;
+    border: 1px dotted #FFF;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.titulo {
+    width: 100%;
+    color: #FFF;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+}
+.titulo img {
+    margin-left: 4px;
+    margin-bottom: 6px;
+}
+
+.info {
+    display: flex;
+    width: 100%;
+}
+.info .temp {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.temp img {
+    width: 100px;
+    height: 100px;
+}
+.info .vento {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.tempTitulo,
+.ventoTitulo,
+.tempSenseTitulo,
+.tempWeatherInfo,
+.ventoAreaTitulo {
+    color: #777;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+.tempWeatherInfo {
+    margin-top: -22px;
+    margin-bottom: 0;
+    text-transform: capitalize;
+    color: #FFF;
+}
+.ventoAreaTitulo {
+    margin-top: 10px;
+}
+.tempInfo,
+.ventoInfo,
+.tempSense {
+    color: #FFF;
+    font-size: 30px;
+    font-weight: bold;
+}
+.tempInfo sup,
+.tempSense sup {
+    font-size: 15px;
+    font-weight: normal;
+}
+.ventoInfo span {
+    font-size: 15px;
+    font-weight: normal;
+}
+.ventoArea {
+    width: 120px;
+    height: 120px;
+    border: 1px solid #FFF;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 4px;
+    margin-bottom: 12px;
+    padding-left: 60px;
+    padding-top: 60px;
+}
+.ventoPonto {
+    width: 40px;
+    height: 1px;
+    background-color: #FFF;
+    transform-origin: left;
+}
+
+.aviso {
+    color: #FFF;
+    padding-top: 20px;
+}
+
+footer {
+    margin-top: 20px;
+    color: #FFF;
+    font-size: 13px;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(0, 108, 248);
+    transition: all ease 200ms;
+}
+footer a:hover {
+    color: rgb(18, 92, 190);
+}
